@@ -8,7 +8,27 @@ export const sliderImages = [
 
 export const bodyParts = [
   {
+    name: 'back',
+    image: require('../assets/images/back.jpeg')
+  },
+  {
     name: 'neck',
+    image: require('../assets/images/neck.jpeg')
+  },
+  {
+    name: 'lower arms',
+    image: require('../assets/images/lower_arms.jpeg')
+  },
+  {
+    name: 'lower legs',
+    image: require('../assets/images/lower_leg.jpeg')
+  },
+  {
+    name: 'chest ',
+    image: require('../assets/images/chest.jpeg')
+  },
+  {
+    name: 'neck ',
     image: require('../assets/images/neck.jpeg')
   },
 ]

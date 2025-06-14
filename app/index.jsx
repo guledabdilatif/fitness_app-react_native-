@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
     // resizeMode: 'cover',
     position: 'absolute'
 
-
   }
 
 

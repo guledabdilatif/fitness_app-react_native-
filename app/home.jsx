@@ -2,6 +2,7 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 import { StatusBar } from 'expo-status-bar';
 import { Image, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import BodyParts from '../components/BodyParts';
 import ImageSlider from '../components/ImageSlider';
 // import ImageSlider from '../components/ImageSlider';
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
                 alignItems: 'flex-start',
                 padding: hp(2)
             }}>
-                <View style={{paddingVertical:10}}>
+                <View style={{ paddingVertical: 10 }}>
                     <Text style={{ fontSize: hp(4.5), fontWeight: "bold" }}>READY TO</Text>
                     <Text style={{ fontSize: hp(4.5), fontWeight: "bold", color: "red" }}>WORKOUT</Text>
                 </View>
@@ -25,7 +26,7 @@ export default function Home() {
                     gap: hp(1),
                     justifyContent: "space-between",
                     alignItems: 'center',
-                    paddingVertical:10
+                    paddingVertical: 10
 
                 }}>
                     <Image source={require('../assets/images/avatar.png')} style={{ height: hp(6), width: hp(6), }} />
@@ -40,13 +41,16 @@ export default function Home() {
                             justifyContent: 'center',
                             backgroundColor: 'lightgray'
                         }}>
-                        <AntDesign name="bells" size={hp(3)} color="gray"/>
+                        <AntDesign name="bells" size={hp(3)} color="gray" />
                     </View>
                 </View>
             </View>
             {/* image carousel  */}
             <View>
                 <ImageSlider />
+            </View>
+            <View style={{ flex: 1 }}>
+                <BodyParts />
             </View>
 
         </SafeAreaView>
